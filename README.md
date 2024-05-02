@@ -3,6 +3,7 @@ A datascience project to classify the Iris Flower on basis of different criteria
 
 
 First we import the necessary libebries such as numpy,pandas 
+
 seaborn (Seaborn is a statistical data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.) 
 Matplotlib is a plotting library for Python. The 'pyplot' module provides a MATLAB-like interface for creating plots and visualizations.
 
