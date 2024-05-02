@@ -28,5 +28,10 @@ The second line calculates the correlation matrix for the numerical columns sele
 **plt.figure(figsize=(10,5))**: This line creates a new figure for the heatmap with a specific size of 10 inches in width and 5 inches in height. This helps adjust the aspect ratio and make the heatmap more readable.
 
 **sns.heatmap(correlation_matrix, annot=True, cmap='RdYlGn')**: This line creates the heatmap using Seaborn's heatmap function. It takes the correlation matrix (correlation_matrix) as input. The annot=True parameter adds numerical annotations to each cell of the heatmap, displaying the correlation coefficient value. The cmap='RdYlGn' parameter specifies the color map to use for the heatmap. Here, 'RdYlGn' represents the Red-Yellow-Green color palette.
+
 **plt.title("Correlation of Iris dataset")**: This line sets the title of the heatmap to "Correlation of Iris dataset".
+
 **plt.show()**: Finally, this line displays the heatmap.
+
+![image](https://github.com/shubham-dethe/-IRIS-FLOWER-CLASSIFICATION/assets/131885305/4ac8e04f-d155-4804-8a5a-ee8e2ffd1156)
+
