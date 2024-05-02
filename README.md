@@ -15,11 +15,18 @@ Then we imported specific modules and classes from the scikit-learn library (skl
 
 ![read csv](https://github.com/shubham-dethe/-IRIS-FLOWER-CLASSIFICATION/assets/131885305/a0e8f26d-dbcc-4a0f-ad6d-51be3f06340b)
 
-Drop the id column
+**03]** Drop the id column
 ![image](https://github.com/shubham-dethe/-IRIS-FLOWER-CLASSIFICATION/assets/131885305/ca3f8178-3f80-48ed-9c3d-1b04c3cc00d7)
 
-We select the numeric column the line of code selects only the numerical columns from the DataFrame df. The select_dtypes method allows you to filter columns based on their data types.
+**4]** We select the numeric column the line of code selects only the numerical columns from the DataFrame df. The select_dtypes method allows you to filter columns based on their data types.
 The second line calculates the correlation matrix for the numerical columns selected in the previous step. The corr() method computes pairwise correlation of columns, excluding NA/null values. 
 
 ![image](https://github.com/shubham-dethe/-IRIS-FLOWER-CLASSIFICATION/assets/131885305/6548dba7-ef97-433a-b7ca-8dc86eddbcb6)
 
+**5]** The code visualizes the correlation matrix using a heatmap, a common way to represent correlations between numerical variables.
+
+**plt.figure(figsize=(10,5))**: This line creates a new figure for the heatmap with a specific size of 10 inches in width and 5 inches in height. This helps adjust the aspect ratio and make the heatmap more readable.
+
+**sns.heatmap(correlation_matrix, annot=True, cmap='RdYlGn')**: This line creates the heatmap using Seaborn's heatmap function. It takes the correlation matrix (correlation_matrix) as input. The annot=True parameter adds numerical annotations to each cell of the heatmap, displaying the correlation coefficient value. The cmap='RdYlGn' parameter specifies the color map to use for the heatmap. Here, 'RdYlGn' represents the Red-Yellow-Green color palette.
+**plt.title("Correlation of Iris dataset")**: This line sets the title of the heatmap to "Correlation of Iris dataset".
+**plt.show()**: Finally, this line displays the heatmap.
